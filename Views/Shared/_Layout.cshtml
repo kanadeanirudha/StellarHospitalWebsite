@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - StellarHospitalWebsite</title>
+    <link rel="stylesheet" type="text/css" href="~/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="~/css/slick-theme.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/custom.css">
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+</head>
+<body>
+<!-- Header -->
+    <div id="header" class="bg-accent-opacity">
+        <div class="r-container">
+            <nav class="navbar navbar-expand-lg font-2">
+                <div class="container-fluid px-4 px-lg-5 mobile-only">
+                    <div class="logo-container">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./images/stellar-logo.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-lg-flex flex-lg-column" id="navbarSupportedContent">
+                        <div id="contact-info" class="d-flex gap-2 justify-content-end mb-2 w-100">
+                            <div id="et-info">
+                                <span id="et-info-phone" class="d-flex gap-2 flex-column flex-lg-row">
+                                    <span class="call-mobile-number" id="header-ph1-en">
+                                        CALL: <a href="tel:15147000663">1-514-700-0663</a>
+                                    </span>
+                                    <span class="call-mobile-number" id="header-ph2-en">
+                                        TOLL FREE: <a href="tel:18332136353">1-833-213-6353</a>
+                                    </span>
+                                </span>
+                            </div>
+                            <button class="get-app button-set" type="button">Get App</button>
+                            <button class="contact-us button-set" type="button">Contact Us</button>
+                        </div>
+                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0 gap-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Doctors</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Breast Care</a></li>
+                                    <li><a class="dropdown-item" href="#">Prostate Care</a></li>
+                                    <li><a class="dropdown-item" href="#">Pain Management</a></li>
+                                    <li><a class="dropdown-item" href="#">Health Risk Assessment</a></li>
+                                    <li><a class="dropdown-item" href="#">Ultrasound</a></li>
+                                    <li><a class="dropdown-item" href="#">Live Longer Plan</a></li>
+                                    <li><a class="dropdown-item" href="#">Corporate (B2B) Services</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sheduled Appointment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pay Bill</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Get Care Now</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Emergency Care</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Location</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+   <!--Footer-->
+    <footer>
+        <div class="section pb-0 bg-accent-color text-white">
+            <div class="r-container">
+                <div class="pb-5">
+                    <div class="row row-cols-lg-2 row-cols-1">
+                        <div class="col col-lg-4 mb-3">
+                            <div class="d-flex flex-column gap-3">
+                                <img src="images/stellar-hospital-logo-white.svg" alt="" class="img-fluid" width="300">
+                            </div>
+                        </div>
+                        <div class="col col-lg-8 mb-3">
+                            <div class="row row-cols-lg-2 row-cols-1">
+                                <div class="col mb-3">
+                                    <div class="d-flex flex-column gap-3">
+                                        <div class="pb-2 w-max-content pe-3">
+                                            <h5 class="footer-sect-header">Follow Us</h5>
+                                        </div>
+										<div class="social-container mb-lg-0 mb-3">
+											<a href="https://www.facebook.com" class="social-item">
+												<i class="fa-brands fa-facebook-f"></i>
+											</a>
+											<a href="https://www.twitter.com" class="social-item">
+												<i class="fa-brands fa-twitter"></i>
+											</a>
+											<a href="https://www.instagram.com" class="social-item">
+												<i class="fa-brands fa-instagram"></i>
+											</a>
+											<a href="https://www.youtube.com" class="social-item">
+												<i class="fa-brands fa-youtube"></i>
+											</a>
+										</div>
+										<div class="widget-container">
+											<h2 class="heading-title size-default">
+												<a href="#">Blog</a>
+											</h2>		
+										</div>
+										<div class="pb-2 w-max-content pe-3">
+                                            <h5 class="footer-sect-header">Contact Us</h5>
+                                        </div>
+										<div class="widget-container">
+											<div class="add-container">
+												<span>
+													<a href="mailto:info@Stellarmontreal.ca" target="_blank" rel="noopener">info@Stellarmontreal.ca</a>
+												</span>
+											</div>
+											<div class="add-container">
+												<span id="footer-ph1-en"><strong>Local:</strong> 1-514-700-0663</span><br>
+												<span id="footer-ph2-en"><strong>Toll-Free:</strong> 1-833-213-6353</span><br>
+												<span><strong>Fax:</strong> 1-888-444-8137</span>
+											</div>						
+										</div>
+										<div class="widget-container">
+                                            <p class="copyright-text">Copyright © @System.DateTime.Now.Year <a href="http://coditechsoftware.com/" target="_blank">Coditech Software Pvt. Ltd</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="d-flex flex-column gap-3">
+                                        <div class="pb-2 w-max-content pe-3">
+                                            <h5 class="footer-sect-header">Our Location</h5>
+                                        </div>
+										<div class="add-container">
+											<span>
+												<a href="#" target="_blank" rel="noopener">6766 Trans-Canada Hwy, Suite 401<br/>Kirkland, QC H9H 4M7</a>
+											</span>
+										</div>
+										<div class="map-container">
+											<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11194.93741175718!2d-73.846081!3d45.455009000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc93c0a1db5fb73%3A0x2ab25e2b51636422!2s16766%20Autoroute%20Transcanadienne%20suite%20401%2C%20Kirkland%2C%20QC%20H9H%204M7%2C%20Canada!5e0!3m2!1sen!2sus!4v1708708646720!5m2!1sen!2sus" width="100%" height="255px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<!--End Footer-->
+    <!-- Scripts -->
+    <script src="~/js/vendor/jquery.min.js"></script>
+    <script src="~/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="~/js/vendor/swiper-bundle.min.js"></script>
+    <script src="~/js/script.js"></script>
+    <script src="~/js/vendor/fslightbox.js"></script>
+    <script src="~/js/slick.js" type="text/javascript" charset="utf-8"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

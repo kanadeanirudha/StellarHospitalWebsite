@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=League+Spartan:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
+
+.ml-auto{
+	margin-left: auto!important;
+}
+
+.slider-item {
+	background-size: 100% 100%;
+	height: 100% !important;
+	padding: 15% 5%;
+}
+/*Slick Slider CSS*/
+.slick-prev:before,
+.slick-next:before {
+  color: #ffffff;
+  font-family: 'Font Awesome 6 Free' !important;
+  font-size: 35px;
+}
+.slick-prev {
+    left: 15px;
+    z-index: 99;
+}
+.slick-next {
+    right: 15px;
+}
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 15px;
+}
+/*End Slick Slider*/
+
+/*Homepage*/
+.button-set {
+    display: inline-block;
+    line-height: 1;
+    background-color: #B35F39;
+    font-size: 12px;
+    padding: 8px 14px;
+    border-radius: 3px;
+    color: #ffffff !important;
+    fill: #fff;
+    text-align: center;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: all .3s;
+    border: none;
+    text-transform: uppercase;
+}
+
+.section-heading-title{
+	font-family: "Crimson Pro", serif !important;
+	color: #BC9081 !important;
+	font-size: 66px;
+    font-weight: 300 !important;
+    line-height: 1em;
+    letter-spacing: 0.8px;
+}
+.section-para{
+	font-family: "League Spartan", sans-serif;
+	color:#000000;
+	font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 1.4em;
+}
+.button-set.more-info {
+	font-family: "League Spartan", sans-serif !important;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+    background-color: #BC9081 !important;
+}
+.services-title{
+	font-family: "Crimson Pro", serif !important;
+	color: #AF5E39 !important;
+	font-size: 37px;
+    font-weight: 300 !important;
+    line-height: 1em;
+    letter-spacing: 0.8px;
+}
+.button-set-default {
+    font-family: "Crimson Pro", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1em;
+    fill: #AF5E39;
+    color: #AF5E39;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #AF5E39;
+    border-radius: 25px 25px 25px 25px;
+    padding: 10px 25px 10px 25px;
+}
+.services-card-info .section-para {
+	display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.section.about-section {
+    background: #f2f2f2;
+    padding: 4rem 3rem;
+}
+.about-header {
+    color: #000000;
+    font-family: "Crimson Pro", Sans-serif;
+    font-size: 54px;
+    font-weight: 300;
+    line-height: 1em;
+}
+.info-para p {
+    color: #393939;
+    font-family: "League Spartan", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.info-para p a.info-link {
+    box-shadow: none;
+    text-decoration: none;
+    font-weight: 600;
+    color: #393939;
+    font-size: 16px;
+}
+.btn-animated {
+    font-family: "Crimson Pro", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1em;
+    fill: #000000;
+    color: #000000;
+    background-color: #efc3c3;
+    padding: 25px 40px;
+    border-radius: 80% 30% 30% 50% / 50%;
+}
+.btn-animated:hover{
+	background-color: #ffffff;
+	border-radius: 40% 40% 50% 40% / 30% 50% 50% 50%;
+}
+
+.section.box-section {
+    background: #EDE1D8;
+    padding: 6rem 3rem;
+}
+.header-title {
+    color: #000000;
+    font-family: "Crimson Pro", Sans-serif;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 1.08em;
+}
+.box-section .info-para p {
+    font-size: 18px;
+}
+.img-box-up, .img-box-down {
+    width: 100% !important;
+    max-width: 100%;
+}
+.position-up{
+    position: absolute;
+    z-index: 4;
+}
+.position-down {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    z-index: 2;
+}
+.footer-sect-header {
+    color: #EDE1D8;
+    font-family: Martel, Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+.heading-title.size-default {
+    font-size: initial;
+	margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+.heading-title.size-default a {
+    color: #EDE1DC;
+    font-family: Martel, Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.3em;
+	font-weight: 700;
+}
+.add-container span{
+	color: #ede1d8;
+    font-family: Poppins, Sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+}
+.add-container span a {
+    color: #ede1d8;
+    text-decoration: underline;
+    opacity: .7;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.copyright-text {
+    color: #ede1D8A8;
+    font-family: Poppins, Sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+footer .section {
+    padding: 4rem;
+}
+.contact-heading-title {
+    color: #000000;
+    font-family: "Crimson Pro", Sans-serif;
+    font-size: 72px;
+    font-weight: 400 !important;
+    line-height: 1em;
+}
+.contact-section-para {
+    text-align: center;
+    color: #000000;
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    font-weight: 300 !important;
+	width: 60%;
+    margin: 0 auto;
+}
+.addr-widget-container p, .tell-widget-container p, .tell-widget-container p span, .tell-widget-container p strong {
+	text-align: center;
+    color: #000000;
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+.calendar-widget-container p, .calendar-widget-container p span, .calendar-widget-container p strong{
+	text-align: left !important;
+    color: #000000;
+    font-family: "League Spartan", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+.calendar-widget-container.text-left {
+    text-align: left;
+}
+.calendar-widget-container p strong, .tell-widget-container p strong{
+	font-weight:600;
+}
+.msg-box-section {
+    background: #444F3B;
+    padding: 6rem 3rem;
+}
+.big-message {
+    color: #EDE1D8;
+    font-family: "Crimson Pro", Sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.3em;
+    text-align: center;
+}
+.book-appointment-section {
+    background: #f2f2f2;
+    padding: 0rem;
+}
+.left-container-padd{
+	padding: 2rem 4rem;
+}
+.book-appointment-msg {
+    text-align: center;
+    color: #54595e;
+    font-family: "Crimson Pro", Sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+.book-appointment-msg a{
+    font-family: "Crimson Pro", Sans-serif;
+    font-size: 42px;
+}
+.msg-font{
+	text-align: center;
+    color: #000000;
+    font-family: "League Spartan", sans-serif;
+    font-size: 28px;
+    font-weight: 300 !important;
+    line-height: 1.2em;
+}
+.img-contaier, .full-img  {
+    width: 100%;
+    height: 100%;
+}
+.btn-book-appointment:hover {
+    background: #ede1d8 !important;
+	border-radius: 40% 40% 50% 40% / 30% 50% 50% 50%;
+}
+#et-info-phone {
+    font-family: Poppins !important;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000 !important;
+}
+.back-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1;
+    position: relative;
+}
+.section.precision-section {
+    background-image: url('../images/care-dignity-hope1.png');
+    background-position: 0 405px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 3rem 4rem;
+}
+.precision-section .s-heading-title {
+    position: absolute;
+    bottom: 0;
+    color: #000000;
+    font-family: "Crimson Pro";
+    font-size: 66px;
+    font-weight: 300;
+    line-height: 1em;
+    left: 0;
+}
+.s-widget-para {
+    position: absolute;
+    bottom: 0;
+}
+.s-widget-para p {
+    color: #000000;
+    font-family: "League Spartan", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.two-block-wrapper {
+    margin-top: 8%;
+}
+.two-block-wrapper .s-widget-container img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.section.box-section.pateint-say {
+    padding: 3rem;
+}
+.pateint-say .p-widget-container {
+    text-align: center;
+}
+.pateint-say .p-widget-container h2{
+    color: #000000;
+    font-family: "Crimson Pro";
+    font-size: 66px;
+    font-weight: 300;
+    line-height: 1em;
+}
+
+/*Review Slider*/
+.single-testimonial-slider {
+    padding: 20px;
+     background-color: #fff;
+    -webkit-box-shadow: 9px 11px 14px 0 rgba(0,0,0,.1);
+    box-shadow: 9px 11px 14px 0 rgba(0,0,0,.1);
+    position: relative;
+    -webkit-transition: .4s;
+    transition: all .4s ease;
+    z-index: 1;
+    margin: 8px;
+}
+section.review-slider .slick-active {
+    opacity: 1;
+}
+.single-testimonial-slider p {
+    margin-bottom: 35px;
+    color: rgba(0, 0, 0, .5);
+    font-family: Poppins,Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.9em;
+	text-align:center;
+}
+.review-slider .single-testimonial-slider ul.testimonial-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+	gap:5px;
+}
+.review-slider .single-testimonial-slider ul.testimonial-stars li a {
+    color: #fec42d;
+}
+.review-slider .single-testimonial-slider i.fa.fa-quote-right {
+    font-size: 30px;
+    color: rgba(37, 117, 252, .2);
+}
+.review-slider .slick-arrow {
+    background: #B35F39 !important;
+    height: 50px;
+    width: 50px;
+}
+.review-slider .slick-arrow.slick-prev:before, .review-slider .slick-arrow.slick-next:before{
+	color: #000000 !important;
+}
+
+.review-slider .slick-arrow.slick-prev {
+    left: -15px;
+    z-index: 99;
+}
+.review-slider .slick-arrow.slick-next {
+    right: -15px;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 1024px){
+	.section {
+		padding: 15px;
+		background: #ffffff;
+	}
+	.container-fluid.mobile-only {
+		display: flex;
+		flex-direction: column;
+	}
+	.container-fluid.mobile-only #navbarSupportedContent {
+		width: 100%;
+	}
+	.container-fluid.mobile-only .navbar-toggler-icon {
+		width: 2em;
+		height: 2em;
+	}
+	#contact-info {
+		margin: 1rem auto !important;
+		text-align: center;
+	}
+	a.nav-link{
+		font-family: Poppins, Sans-serif;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 1.5px;
+		font-size: 14px;
+		padding: 5px 10px;
+	}
+	a.nav-link.active {
+		background: #55595c;
+		color: #ffffff !important;
+	}
+	.about-header {
+		font-size: 42px;
+	}
+	.header-title {
+		font-size: 52px;
+	}
+	.position-up {
+		position: relative;
+	}
+	
+	.calendar-widget-container.text-left {
+		text-align: center;
+	}
+	footer .section {
+		padding: 4rem 2rem;
+		background: #323A3A;
+	}
+	.msg-box-section {
+		background: #444F3B;
+		padding: 2rem 1rem;
+	}
+	.big-message {
+		font-size: 24px;
+	}
+	.order-1-st {
+		order: 0;
+	}
+	.order-second {order: 1;}
+	.s-widget-para, .precision-section .s-heading-title {
+		position: relative;
+	}
+	.info-para p {
+		font-size: 20px;
+	}
+}
