@@ -3,5 +3,9 @@
 ################################################################################
 
 /.vs
-/bin/Debug/net8.0
+/bin
 /obj
+/Properties/PublishProfiles/FolderProfile.pubxml
+/Properties/PublishProfiles/FolderProfile.pubxml.user
+/bin
+/StellarHospitalWebsite.csproj.user

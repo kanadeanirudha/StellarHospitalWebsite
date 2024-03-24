@@ -1,0 +1,185 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+<!-- Main -->
+<main>
+    <!-- Banner -->
+    <div class="section position-relative theme-bg contact-us">
+        <div class="r-container">
+            <div class="row row-cols-lg-2 row-cols-1">
+                <div class="col d-flex flex-column justify-content-end pad-xy-20 position-relative">
+                    <div class="s-widget-container">
+                        <h1 class="s-contact-heading-title s-size-default">Contact US</h1>
+                    </div>
+                    <div class="s-widget-para-container">
+                        If your examination requires a referral request from your doctor, you can send this request by Fax: 1-999-000-8137 or email. You can also bring this request with you at the time of your appointment.
+                    </div>
+                </div>
+                <div class="col position-relative">
+                    <div class="s-widget-container">
+                        <h3 class="s-sub-heading-title s-size-default">Address</h3>
+                    </div>
+                    <div class="s-widget-container">
+                        <p class="s1-para">16766 Trans-Canada Hwy, Suite 401<br>Kirkland, QC H9H 4M7</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="divider-block"></div>
+                    <div class="clearfix"></div>
+                    <div class="s-widget-container">
+                        <h3 class="s-sub-heading-title s-size-default">Telephone</h3>
+                    </div>
+                    <div class="s-widget-container">
+                        <p class="s1-para" id="s-body-ph1-en">Toll-Free : 1-999-000-6353</p>
+                        <p class="s1-para" id="s-body-ph2-en">Local : 1-000-888-0663</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="r-container">
+            <div class="d-flex flex-lg-row flex-column-reverse gap-5">
+                <div class="col">
+                    <div class="s-contact-info-widget-container">
+                        Do you have any questions?<br>
+                        Would you like more information on a particular service or services?<br>
+                        Contact us by completing the following form.<br>
+                        We will be in touch with you as soon as possible.<br><br>
+                        <strong>Privacy</strong><br>
+                        * All fields are required
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="r-container">
+            <div class="d-flex flex-lg-row flex-column-reverse gap-5">
+                <div class="col">
+                    <div class="d-flex flex-column">
+                        <div class="success_msg toast align-items-center w-100 shadow-none mb-3 border border-success rounded-3 my-4"
+                             role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="d-flex p-2">
+                                <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-success">
+                                    <i class="fa-solid fa-check f-36 text-success"></i>
+                                    Your Message Successfully Send.
+                                </div>
+                                <button type="button"
+                                        class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-success"
+                                        data-bs-dismiss="toast" aria-label="Close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="error_msg toast align-items-center w-100 shadow-none border-danger mb-3 my-4 border rounded-3"
+                             role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="d-flex p-2">
+                                <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-danger">
+                                    <i class="fa-solid fa-triangle-exclamation f-36 text-danger"></i>
+                                    Something Wrong ! Send Form Failed.
+                                </div>
+                                <button type="button"
+                                        class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-danger"
+                                        data-bs-dismiss="toast" aria-label="Close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <form class="d-flex flex-column h-100 justify-content-center w-100 needs-validation mb-3 form"
+                              novalidate>
+                            <div class="row row-cols-lg-2 row-cols-1">
+                                <div class="col mb-3">
+                                    <input type="text" class="form-control py-3 px-4" name="fname" id="fname"
+                                           placeholder="First Name" required>
+                                </div>
+                                <div class="col mb-3">
+                                    <input type="text" class="form-control py-3 px-4" name="lname" id="lname"
+                                           placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <div class="row row-cols-lg-2 row-cols-1">
+                                <div class="col mb-3">
+                                    <input type="email" class="form-control py-3 px-4" name="email" id="email"
+                                           placeholder="Email Address" required>
+                                </div>
+                                <div class="col mb-3">
+                                    <input type="tel" class="form-control py-3 px-4" name="phone" id="phone"
+                                           placeholder="Telephone" required>
+                                </div>
+                            </div>
+                            <div class="row row-cols-lg-2 row-cols-1">
+                                <div class="col mb-3">
+                                    <select name="treatment" class="s-form-control s-select s-validates-as-required" aria-required="true" aria-invalid="false">
+                                        <option value="">Select a treatment*</option>
+                                        <option value="Breast Care">Breast Care</option>
+                                        <option value="Prenatal Imaging">Prenatal Imaging</option>
+                                        <option value="Pediatric care">Pediatric care</option>
+                                        <option value="Blood Test">Blood Test</option>
+                                        <option value="Prostate Care">Prostate Care</option>
+                                        <option value="Pain Management">Pain Management</option>
+                                        <option value="Urgent Care Radiology">Urgent Care Radiology</option>
+                                        <option value="Health Risk Assessment">Health Risk Assessment</option>
+                                        <option value="Ultrasound">Ultrasound</option>
+                                        <option value="Advanced Medical Imaging">Advanced Medical Imaging</option>
+                                        <option value="Corporate (B2B) Services">Corporate (B2B) Services</option>
+                                    </select>
+                                </div>
+                                <div class="col mb-3">
+                                    <select name="best_time_to_call" class="s-form-control s-select s-validates-as-required" aria-required="true" aria-invalid="false">
+                                        <option value="">Best time to call?*</option>
+                                        <option value="Any time">Any time</option>
+                                        <option value="Morning">Morning</option>
+                                        <option value="Noon">Noon</option>
+                                        <option value="Afternoon">Afternoon</option>
+                                        <option value="Evening">Evening</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row row-cols-lg-2 row-cols-1">
+                                <div class="col mb-3">
+                                    <select name="signup" class="s-form-control s-select s-validates-as-required" aria-required="true" aria-invalid="false">
+                                        <option value="">Would you like to be put on our mailing list?*</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </div>
+                                <div class="col mb-3">
+                                    <select name="referral" class="s-form-control s-select s-validates-as-required" aria-required="true" aria-invalid="false">
+                                        <option value="">How did you hear about ISMI?*</option>
+                                        <option value="Online Search">Online Search</option>
+                                        <option value="Advertisement">Advertisement</option>
+                                        <option value="Instagram">Instagram</option>
+                                        <option value="Facebook">Facebook</option>
+                                        <option value="YouTube">YouTube</option>
+                                        <option value="Friend/Family">Friend/Family</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea name="how_can_we_help_you" cols="40" rows="10" class="s-form-control s-textarea s-validates-as-required" aria-required="true" aria-invalid="false" placeholder="How can we help you?*" spellcheck="false"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit"
+                                        class="btn btn-accent submit_form py-3 w-100 d-flex justify-content-center">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section p-0">
+        <iframe loading="lazy" class="maps overflow-hidden"
+                src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"
+                title="London Eye, London, United Kingdom" aria-label="London Eye, London, United Kingdom"></iframe>
+    </div>
+
+
+</main>
