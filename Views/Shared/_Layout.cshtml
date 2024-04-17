@@ -99,9 +99,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Emergency Care</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Location</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -125,16 +122,16 @@
         </div>
         <div class="section pb-0 bg-accent-color text-white">
             <div class="r-container">
-                <div class="pb-5">
+                <div class="pb-2">
                     <div class="row row-cols-lg-2 row-cols-1">
-                        <div class="col col-lg-4 mb-3">
+                        @* <div class="col col-lg-4 mb-3">
                             <div class="d-flex flex-column gap-3">
                                 <img src="../images/stellar-hospital-logo-white.svg" alt="" class="img-fluid" width="300">
                             </div>
-                        </div>
-                        <div class="col col-lg-8 mb-3">
+                        </div> *@
+                        <div class="col col-lg-12 mb-3">
                             <div class="row row-cols-lg-2 row-cols-1">
-                                <div class="col mb-3">
+                                <div class="col col-lg-6 mb-3">
                                     <div class="d-flex flex-column gap-3">
                                         <div class="pb-2 w-max-content pe-3">
                                             <h5 class="footer-sect-header">Follow Us</h5>
@@ -154,14 +151,6 @@
                                             </a>
                                         </div>
                                         <div class="widget-container">
-                                            <h2 class="heading-title size-default">
-                                                <a href="#">Blog</a>
-                                            </h2>
-                                        </div>
-                                        <div class="pb-2 w-max-content pe-3">
-                                            <h5 class="footer-sect-header">Contact Us</h5>
-                                        </div>
-                                        <div class="widget-container">
                                             <div class="add-container">
                                                 <span>
                                                     <a href="mailto:info@Stellarmontreal.ca" target="_blank" rel="noopener">info@Stellarmontreal.ca</a>
@@ -173,26 +162,107 @@
                                                 <span><strong>Fax:</strong> 1-888-444-8137</span>
                                             </div>
                                         </div>
-                                        <div class="widget-container">
-                                            <p class="copyright-text">Copyright © @System.DateTime.Now.Year <a href="http://coditechsoftware.com/" target="_blank">Coditech Software Pvt. Ltd</a></p>
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="col mb-3">
+                                <div class="col col-lg-6 mb-3">
                                     <div class="d-flex flex-column gap-3">
                                         <div class="pb-2 w-max-content pe-3">
-                                            <h5 class="footer-sect-header">Our Location</h5>
+                                            <h5 class="footer-sect-header">Contact Us</h5>
                                         </div>
                                         <div class="add-container">
-                                            <span>
-                                                <a href="#" target="_blank" rel="noopener">30, Gurudev Nagar Main Road,<br/> Nandanwan. Nagpur.</a>
-                                            </span>
+                                            <form class="d-flex flex-column h-100 justify-content-center w-100 needs-validation mb-3 form"
+                                                  novalidate>
+                                                <div class="row row-cols-lg-2 row-cols-1">
+                                                    <div class="col mb-3">
+                                                        <input type="text" class="form-control py-3 px-4" name="fname" id="fname"
+                                                               placeholder="First Name" required>
+                                                    </div>
+                                                    <div class="col mb-3">
+                                                        <input type="text" class="form-control py-3 px-4" name="lname" id="lname"
+                                                               placeholder="Last Name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row row-cols-lg-2 row-cols-1">
+                                                    <div class="col mb-3">
+                                                        <input type="email" class="form-control py-3 px-4" name="email" id="email"
+                                                               placeholder="Email Address" required>
+                                                    </div>
+                                                    <div class="col mb-3">
+                                                        <input type="tel" class="form-control py-3 px-4" name="phone" id="phone"
+                                                               placeholder="Telephone" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row row-cols-lg-2 row-cols-1">
+                                                    <div class="col mb-3">
+                                                        <select name="treatment" class="s-form-control s-select s-validates-as-required" aria-required="true" aria-invalid="false">
+                                                            <option value="">Select a treatment*</option>
+                                                            <option value="Breast Care">Breast Care</option>
+                                                            <option value="Prenatal Imaging">Prenatal Imaging</option>
+                                                            <option value="Pediatric care">Pediatric care</option>
+                                                            <option value="Blood Test">Blood Test</option>
+                                                            <option value="Prostate Care">Prostate Care</option>
+                                                            <option value="Pain Management">Pain Management</option>
+                                                            <option value="Urgent Care Radiology">Urgent Care Radiology</option>
+                                                            <option value="Health Risk Assessment">Health Risk Assessment</option>
+                                                            <option value="Ultrasound">Ultrasound</option>
+                                                            <option value="Advanced Medical Imaging">Advanced Medical Imaging</option>
+                                                            <option value="Corporate (B2B) Services">Corporate (B2B) Services</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col mb-3">
+                                                        <select name="best_time_to_call" class="s-form-control s-select s-validates-as-required" aria-required="true" aria-invalid="false">
+                                                            <option value="">Best time to call?*</option>
+                                                            <option value="Any time">Any time</option>
+                                                            <option value="Morning">Morning</option>
+                                                            <option value="Noon">Noon</option>
+                                                            <option value="Afternoon">Afternoon</option>
+                                                            <option value="Evening">Evening</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row row-cols-lg-2 row-cols-1">
+                                                    <div class="col mb-3">
+                                                        <select name="signup" class="s-form-control s-select s-validates-as-required" aria-required="true" aria-invalid="false">
+                                                            <option value="">Would you like to be put on our mailing list?*</option>
+                                                            <option value="Yes">Yes</option>
+                                                            <option value="No">No</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col mb-3">
+                                                        <select name="referral" class="s-form-control s-select s-validates-as-required" aria-required="true" aria-invalid="false">
+                                                            <option value="">How did you hear about ISMI?*</option>
+                                                            <option value="Online Search">Online Search</option>
+                                                            <option value="Advertisement">Advertisement</option>
+                                                            <option value="Instagram">Instagram</option>
+                                                            <option value="Facebook">Facebook</option>
+                                                            <option value="YouTube">YouTube</option>
+                                                            <option value="Friend/Family">Friend/Family</option>
+                                                            <option value="Other">Other</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <textarea name="how_can_we_help_you" cols="40" rows="10" class="s-form-control s-textarea s-validates-as-required" aria-required="true" aria-invalid="false" placeholder="How can we help you?*" spellcheck="false"></textarea>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <button type="submit"
+                                                            class="btn btn-accent submit_form py-3 w-100 d-flex justify-content-center">
+                                                        Send Message
+                                                    </button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="r-container copyright-wrapper">
+                <div class="widget-container">
+                    <p class="copyright-text">Copyright © @System.DateTime.Now.Year <a href="http://coditechsoftware.com/" target="_blank">Coditech Software Pvt. Ltd</a></p>
                 </div>
             </div>
         </div>
