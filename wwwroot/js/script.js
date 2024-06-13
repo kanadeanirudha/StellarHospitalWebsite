@@ -1,7 +1,23 @@
 $(function () {
     $('.nav-btn').on('click', function () {
         $(this).toggleClass('open');
-    });
+	});
+
+	var backToTopBtn = $('#back-to-button');
+
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > 100) {
+			backToTopBtn.addClass('show');
+		} else {
+			backToTopBtn.removeClass('show');
+		}
+	});
+
+	backToTopBtn.on('click', function (e) {
+		e.preventDefault();
+		$('html, body').animate({ scrollTop: 0 }, '300');
+	});
+
 });
 
 $(window).ready(function () {

@@ -11,6 +11,8 @@
     <link rel="icon" type="image/x-icon" href="image/favicon.png">
 </head>
 <body>
+    <!-- Back to top button -->
+    <a id="back-to-button" class="fa fa-circle-chevron-up"></a>
     <!-- Header -->
     <div id="header" class="bg-accent-opacity">
         <div class="r-container">
@@ -45,8 +47,13 @@
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">About Stellar Hospital</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/home/team">Doctors</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                   aria-expanded="false" href="/home/team">Doctors</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/home/team#DrNitinShinde">Dr. Nitin Shinde</a></li>
+                                    <li><a class="dropdown-item" href="/home/team#DrRashmiShinde">Dr. Rashmi Shinde</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -54,7 +61,7 @@
                                     Our Specialities
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Neurosciences</a></li>
+                                    <li><a class="dropdown-item" href="/home/Neurosciences">Neurosciences</a></li>
                                     <li><a class="dropdown-item" href="#">Internal Medicine</a></li>
                                     <li><a class="dropdown-item" href="#">Women’s Health, Maternal and Fetal Medicine</a></li>
                                     <li><a class="dropdown-item" href="#">Psychiatry</a></li>
@@ -91,7 +98,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Facilities</a>
+                                <a class="nav-link" href="/home/Facilities">Facilities</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Health Packages</a>

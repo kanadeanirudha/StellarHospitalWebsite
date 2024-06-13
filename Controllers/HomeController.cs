@@ -27,6 +27,14 @@ namespace StellarHospitalWebsite.Controllers
         {
             return View();
         }
+        public IActionResult Neurosciences()
+        {
+            return View();
+        }
+        public IActionResult Facilities()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

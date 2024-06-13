@@ -146,7 +146,7 @@
 .info-para p {
     color: #393939;
     font-family: "League Spartan", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -498,7 +498,7 @@ section.review-slider .slick-active {
 @media only screen and (max-width: 1024px) {
     .section {
         padding: 15px;
-        background: #ffffff;
+        /*background: #ffffff;*/
     }
 
     .container-fluid.mobile-only {
@@ -716,32 +716,38 @@ button.submit_form {
     .our-team-wrapper .about-header, .our-team-wrapper .info-para p {
         color: #ffffff;
     }
-.our-team-wrapper .block-heading {
-    color: #ffffff;
-    font-family: "Crimson Pro";
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 1em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+
+    .our-team-wrapper .block-heading {
+        color: #ffffff;
+        font-family: "Crimson Pro";
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
 .block-listing li {
     font-family: "League Spartan", sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
+
 .section.profile-section {
     padding: 2rem 1rem;
 }
+
 .block-listing li .block-sub-listing li {
     list-style: disc;
-    margin-bottom:5px;
+    margin-bottom: 5px;
 }
+
 .our-team-wrapper.level-2 {
     background-color: #EDE1D8;
 }
+
     .our-team-wrapper.level-2 .about-header, .our-team-wrapper.level-2 .info-para p, .our-team-wrapper.level-2 .block-heading, .our-team-wrapper.level-2 .block-listing li {
         color: #000000;
     }
@@ -753,3 +759,173 @@ button.submit_form {
     font-weight: 600;
     line-height: 1em;
 }
+
+
+
+/*back to top*/
+#back-to-button {
+    display: inline-block;
+    /*background-color: #B35F39;*/
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+    #back-to-button::before {
+        /*content: "\f139";
+    font-family: 'Font Awesome 6 Free';*/
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+    }
+
+    #back-to-button:hover {
+        cursor: pointer;
+        /*background-color: #333;*/
+    }
+
+    #back-to-button:active {
+        /*background-color: #555;*/
+    }
+
+    #back-to-button.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+/*Our Speciality*/
+.dark-bg-content {
+    background-color: #323a3a;
+}
+
+.light-bg-content {
+    background-color: #EDE1D8;
+}
+
+.dark-bg-content, .dark-bg-content .info-para p, .dark-bg-content .header-block .block-heading, .dark-bg-content .block-listing li {
+    color: #ffffff;
+}
+
+.light-bg-content, .light-bg-content .info-para p, .light-bg-content .header-block .block-heading, .light-bg-content .block-listing li {
+    color: #000000;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.title-border-left {
+    border-left: 8px solid #B35F39;
+    padding-left: 10px;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.title-border-right {
+    border-right: 8px solid #B35F39;
+    padding-right: 10px;
+    border-radius: 6px;
+    text-align: right;
+}
+
+.our-speciality-wrapper .section {
+    padding-bottom: 0 !important;
+}
+
+/*Facilities*/
+.our-facilities {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+    .our-facilities img {
+        width: 100%;
+        height: auto;
+    }
+
+    .our-facilities .team-content {
+        width: 100%;
+        background: #B35F39;
+        color: #ffffff;
+        padding: 15px 0 10px 0;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s ease 0s;
+    }
+
+        .our-facilities .team-content:before {
+            left: -3%;
+        }
+
+        .our-facilities .team-content:before, .our-facilities .team-content:after {
+            content: "";
+            width: 60%;
+            height: 38px;
+            background: #B35F39;
+            position: absolute;
+            top: -18px;
+            transform: rotate(15deg);
+            z-index: -1;
+        }
+    .our-facilities .team-content:after {
+        right: -3%;
+        transform: rotate(-15deg);
+    }
+
+    .our-facilities .title {
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin: 0 0 7px 0;
+        position: relative;
+        color: #ffffff;
+    }
+
+        .our-facilities .title:before {
+            left: 32%;
+        }
+
+        .our-facilities .title:before, .our-facilities .title:after {
+            content: "";
+            width: 7px;
+            height: 93px;
+            background: #c7da43;
+            position: absolute;
+            top: -78px;
+            z-index: -2;
+            transform: rotate(-74deg);
+        }
+
+        .our-facilities .title:after {
+            right: 32%;
+            transform: rotate(74deg);
+        }
+
+    .our-facilities .morebtn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #fff;
+        background-color: #B35F39;
+        border-color: #B35F39;
+        padding: 3px 15px;
+        border-radius: 4px;
+    }
