@@ -98,8 +98,8 @@
 .services-title {
     font-family: "Crimson Pro", serif !important;
     color: #AF5E39 !important;
-    font-size: 37px;
-    font-weight: 300 !important;
+    font-size: 26px;
+    font-weight: 600 !important;
     line-height: 1em;
     letter-spacing: 0.8px;
 }
@@ -124,7 +124,7 @@
     display: block;
     display: -webkit-box;
     max-width: 100%;
-    -webkit-line-clamp: 4;
+    /*-webkit-line-clamp: 4;*/
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -929,3 +929,38 @@ button.submit_form {
         padding: 3px 15px;
         border-radius: 4px;
     }
+.page-title-wrapper {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    padding: 1em;
+    margin: 1rem auto 0;
+}
+
+.page-title-wrapper .page-heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: #222;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 10px;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.page-title-wrapper .page-heading:after, .page-title-wrapper .page-heading:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #B35F39;
+    border-top: 1px solid #B35F39;
+    height: 5px;
+    background-color: #f8f8f8;
+}
+
+#header {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
