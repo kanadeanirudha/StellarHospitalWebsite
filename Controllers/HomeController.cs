@@ -27,10 +27,11 @@ namespace StellarHospitalWebsite.Controllers
         {
             return View();
         }
-        public IActionResult Neurosciences()
+        public IActionResult OurSpecialities(string speciality)
         {
-            return View();
+            return View($"~/Views/OurSpecialities/{speciality}.cshtml");
         }
+
         public IActionResult Facilities()
         {
             return View();
