@@ -88,3 +88,12 @@ $(window).ready(function () {
 	$('.slick-next.slick-arrow').addClass('fa fa-chevron-right');
 
 })
+
+$(window).scroll(function () {
+	if ($(window).scrollTop() >= 100) {
+		$('#header').addClass('fixed-header');
+	}
+	else {
+		$('#header').removeClass('fixed-header');
+	}
+});

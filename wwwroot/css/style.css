@@ -287,7 +287,7 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1.5px;
-    padding: 13px 13px !important;
+    padding: 6px 13px !important;
     line-height: 20px;
 }
 
@@ -296,7 +296,7 @@ a {
         background-color: white;
     }
 
-    .dropdown-item:hover {
+    .dropdown-item:hover, .dropdown-item:focus {
         background-color: var(--accent-color);
         color: white;
     }
@@ -993,7 +993,7 @@ a {
     }
 
 .glass-effect {
-    background: #a55950d5;
+    background: #ffffff;
     backdrop-filter: blur(11px);
     -webkit-backdrop-filter: blur(11px);
 }
