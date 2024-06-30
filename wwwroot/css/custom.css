@@ -841,9 +841,9 @@ button.submit_form {
     text-align: right;
 }
 
-.our-speciality-wrapper .section {
+/*.our-speciality-wrapper .section {
     padding-bottom: 0 !important;
-}
+}*/
 
 /*Facilities*/
 .our-facilities {
@@ -993,3 +993,10 @@ button.submit_form {
 *::-webkit-scrollbar-thumb {
     background-color: #323A3A;
 }
+
+.bg-level-1 .section.service-section, .bg-level-2 .section.service-section{
+    padding:0 !important;
+}
+    .bg-level-1 .section.service-section p.profile-position:last-child, .bg-level-2 .section.service-section p.profile-position:last-child {
+        margin-bottom: 0 !important;
+    }
