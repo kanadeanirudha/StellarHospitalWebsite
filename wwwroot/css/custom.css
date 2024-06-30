@@ -845,6 +845,10 @@ button.submit_form {
     padding-bottom: 0 !important;
 }
 
+.our-speciality-wrapper .section:last-child {
+    padding-bottom: 2rem !important;
+}
+
 /*Facilities*/
 .our-facilities {
     text-align: center;
