@@ -18,35 +18,35 @@ jobs:
          run: | 
            & "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\msbuild.exe"  './StellarHospitalwebsite.sln' /p:DeployOnBuild=true /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:publishUrl="./publish/Release" /p:Configuration=Release /p:TransformConfigFiles=false
 
-       # - name: Stop API IIS Site and App Pool
-       #   run: |
-       #    # Stop the IIS site
-       #    Stop-WebSite -Name "StellarHospitalwebsite" 
+       - name: Stop API IIS Site and App Pool
+         run: |
+          # Stop the IIS site
+          Stop-WebSite -Name "StellarHospitalwebsite" 
 
-       #    # Stop the associated app pool
-       #    Stop-WebAppPool -Name "StellarHospitalwebsite"
+          # Stop the associated app pool
+          Stop-WebAppPool -Name "StellarHospitalwebsite"
 
-       #    # Wait for a few seconds (optional, if needed)
-       #    Start-Sleep -Seconds 5
+          # Wait for a few seconds (optional, if needed)
+          Start-Sleep -Seconds 5
 
-       # - name: Copy Build file
-       #   run: Copy-Item -Path C:\GitAction\_work\StellarHospitalwebsite\StellarHospitalwebsite\obj\Release\Package\PackageTmp\* -Destination C:\HostingSites\StellarHospitalwebsite\ -Recurse -Force
+       - name: Copy Build file
+         run: Copy-Item -Path C:\GitAction\_work\StellarHospitalWebsite\StellarHospitalWebsite\bin\Release\net8.0\* -Destination C:\HostingSites\StellarHospitalwebsite\ -Recurse -Force
 
-       # - name: Start API IIS Site and App Pool
-       #   run: |
-       #    # Start the IIS site
-       #    Start-WebSite -Name "StellarHospitalwebsite"
+       - name: Start API IIS Site and App Pool
+         run: |
+          # Start the IIS site
+          Start-WebSite -Name "StellarHospitalwebsite"
 
-       #    # Start the associated app pool
-       #    Start-WebAppPool -Name "StellarHospitalwebsite"
+          # Start the associated app pool
+          Start-WebAppPool -Name "StellarHospitalwebsite"
 
-       # - name: Stop Admin IIS Site and App Pool
-       #   run: |
-       #    # Stop the IIS site
-       #    Stop-WebSite -Name "StellarHospitalwebsite" 
+       - name: Stop Admin IIS Site and App Pool
+         run: |
+          # Stop the IIS site
+          Stop-WebSite -Name "StellarHospitalwebsite" 
 
-       #    # Stop the associated app pool
-       #    Stop-WebAppPool -Name "StellarHospitalwebsite"
+          # Stop the associated app pool
+          Stop-WebAppPool -Name "StellarHospitalwebsite"
 
-       #    # Wait for a few seconds (optional, if needed)
-       #    Start-Sleep -Seconds 5
+          # Wait for a few seconds (optional, if needed)
+          Start-Sleep -Seconds 5
