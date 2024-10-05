@@ -10,6 +10,10 @@ jobs:
          with:
            ref: main
 
+       - name: Restore Packages
+         run: |
+           & "C:\\GitAction\\nugettools\\nuget.exe" restore './StellarHospitalwebsite.sln' -NoCache -DirectDownload -MSBuildPath "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\"
+       
        - name: Build
          run: | 
            & "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\msbuild.exe"  './StellarHospitalwebsite.sln' /p:DeployOnBuild=true /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=True /p:publishUrl="./publish/Release" /p:Configuration=Release /p:TransformConfigFiles=false
